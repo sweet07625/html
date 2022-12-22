@@ -1,0 +1,287 @@
+<html>
+    <head><title>阿甜師</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:#8b4513;
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color: #fffaf0;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;    
+            
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:#f4a460;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #f4a460; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: #fffaf0;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #11111111; 
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #cd853f;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #cd853f;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: #ffdab9;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color: black;
+        }
+        
+        /* banner*/
+        .banner{
+            background-image: linear-gradient(#ffe4c4,#a0522d);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }        
+        /*faculty*/
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:#fffaf0;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgba(39,40,34,.500);;
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+            color: #fffaf0;
+            background-color: rgba(139,69,19);
+            text-align: center;           
+        }
+        /*contact*/
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;    
+            background-color:#fffaf0;
+            
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: #8b4513;
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: #8b4513;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color:#8b4513;
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+            
+        }
+        /*footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color:#ffe4c4;
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://i.ibb.co/WtvQ1C0/image.png
+">
+            阿甜師
+                  
+                </div>
+                <div class="top-nav">
+                  <a href="https://shopee.tw/?gclid=EAIaIQobChMIkJGmttz6-wIVCVZgCh0i5geyEAAYASAAEgJlV_D_BwE">購物車</a>
+                  <a href="https://google.com">尋找</a>
+                  <a href=>會員登入</a>
+                </div>
+              </div>
+        </div>
+        
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">最新消息</a></li>
+                <li  class="dropdown"><a href="#faculty">產品介紹</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">真得好甜</a>
+                        <a href="#faculty">甜到咪咪茂茂</a>
+                        <a href="#faculty">給我胰島素</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">關於阿甜</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="https://www.gomaji.com/blog/wp-content/uploads/2021/01/FotoJet2.jpg" /></li>
+                    <li><img src="https://ciao.kitchen/wp-content/uploads/2022/01/Fudgy-Brownie-with-Crispy-Top-02.jpg" /></li>
+                    <li><img src="https://s.yimg.com/ny/api/res/1.2/RL.JBSB5Xv05W9oMOgzMMQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://media.zenfs.com/ko/news_tvbs_com_tw_938/4acf227affd1e40ca79fb8fa03bcd243" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>產品簡介</h1>
+            <h1>歷年甜死人不償命獎得主</h1>
+            <h1>#吃過都說甜</h1>
+            <h1>#全國第一甜甜店</h1>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>產品資訊</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://findlife.com.tw/menu/blog/wp-content/uploads/2018/09/9d124ad8-9942-4a84-93bf-202a89b25c78_i_image-595x595.jpg" />
+                    <h3>真的好甜</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ67PSF19sEH_BpHaMsyrczRzpckSSQ4lkkzA&usqp=CAU" />
+                    <h3>甜到咪咪茂茂</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://i.epochtimes.com/assets/uploads/2015/04/1404091049022483-600x399.jpg" />
+                    <h3>給我胰島素</h3>
+                </a>        
+            </div>
+        </div>
+        <div class="contact" id="about">
+            <div class="container">
+                <h2>相關資訊</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>太平島中央</b>
+                        <span>太平島中央1號</span>
+                        <b> 電話:87-487987</b>
+                        <span>分機:6699、8877、6987</span>
+                        <b> 傳真:03-948787</b>
+                        <span>分機:6699</span>
+                    </div>
+                    <div class="right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15698.30910374148!2d114.35665592740743!3d10.375644881506899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33d39d3bdbc15705%3A0xc1d010c2960cbc06!2z5aSq5bmz5bO2!5e0!3m2!1szh-TW!2stw!4v1671075697181!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 Department of Information Management, MUST. All rights reserved. 維護者 Kaiii
+        </div>
+     </body>
+</html>
